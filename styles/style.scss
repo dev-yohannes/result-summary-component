@@ -31,7 +31,6 @@ body {
 
 .card {
   display: flex;
-  border: 1px solid red;
   width: 35%;
 
   .left-sec {
@@ -48,12 +47,15 @@ body {
     border-radius: 30px;
 
     .your-result,
-    .second-span {
+    .second-span,
+    .long-p {
       color: var(--light-lavender);
     }
 
     .your-result {
       margin-top: 30px;
+      font-size: 20px;
+      font-weight: 700;
     }
 
     .rounded {
@@ -77,12 +79,14 @@ body {
 
     .great {
       margin-bottom: 10px;
+      font-size: 25px;
+      font-weight: 700;
     }
 
     .long-p {
       width: 75%;
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
     }
   }
 
@@ -91,21 +95,88 @@ body {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     box-shadow: 20px 32px 70px 0px rgba(0, 0, 0, 0.1);
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
 
+    p,
     .row1,
     .row2,
     .row3,
-    .row4 {
-      border: 1px solid black;
+    .row4,
+    button {
+      // border: 1px solid black;
+      border-radius: 7px;
       width: 80%;
       margin: 25px auto;
-      padding: 10px 0;
+      padding: 13px 5px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    p {
+      padding: 0;
+      border: none;
+      color: var(--dark-gray-blue);
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .row1 {
+      color: var(--light-red);
+      background-color: hsl(0, 100%, 67%, 0.1);
+    }
+
+    .row2 {
+      color: var(--orangey-yellow);
+      background-color: hsl(39, 100%, 56%, 0.1);
+    }
+
+    .row3 {
+      color: var(--green-teal);
+      background-color: hsl(166, 100%, 37%, 0.1);
+    }
+
+    .row4 {
+      color: var(--cobalt-blue);
+      background-color: hsl(234, 85%, 45%, 0.1);
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+    }
+
+    .right {
+      color: black;
+      font-weight: 700;
+
+      span {
+        color: gray;
+      }
+    }
+
+    button {
+      margin-top: 50px;
+      padding: 15px 3px;
+      display: flex;
+      justify-content: center;
+      border-radius: 30px;
+      background-color: var(--dark-gray-blue);
+      color: white;
+      font-weight: 700;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    flex-wrap: wrap;
+
+    .left-sec,
+    .right-sec {
+      width: 100%;
     }
   }
 }
