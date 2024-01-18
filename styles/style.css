@@ -29,7 +29,6 @@ body {
 
 .card {
   display: flex;
-  border: 1px solid red;
   width: 35%;
 }
 .card .left-sec {
@@ -42,11 +41,14 @@ body {
   border-radius: 30px;
 }
 .card .left-sec .your-result,
-.card .left-sec .second-span {
+.card .left-sec .second-span,
+.card .left-sec .long-p {
   color: var(--light-lavender);
 }
 .card .left-sec .your-result {
   margin-top: 30px;
+  font-size: 20px;
+  font-weight: 700;
 }
 .card .left-sec .rounded {
   height: 200px;
@@ -63,11 +65,13 @@ body {
 }
 .card .left-sec .great {
   margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 700;
 }
 .card .left-sec .long-p {
   width: 75%;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .card .right-sec {
   width: 50%;
@@ -75,15 +79,74 @@ body {
   border-bottom-right-radius: 30px;
   box-shadow: 20px 32px 70px 0px rgba(0, 0, 0, 0.1);
 }
+.card .right-sec p,
 .card .right-sec .row1,
 .card .right-sec .row2,
 .card .right-sec .row3,
-.card .right-sec .row4 {
-  border: 1px solid black;
+.card .right-sec .row4,
+.card .right-sec button {
+  border-radius: 7px;
   width: 80%;
   margin: 25px auto;
-  padding: 10px 0;
+  padding: 13px 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.card .right-sec p {
+  padding: 0;
+  border: none;
+  color: var(--dark-gray-blue);
+  font-weight: 700;
+  font-size: 20px;
+}
+.card .right-sec .row1 {
+  color: var(--light-red);
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.card .right-sec .row2 {
+  color: var(--orangey-yellow);
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+.card .right-sec .row3 {
+  color: var(--green-teal);
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+.card .right-sec .row4 {
+  color: var(--cobalt-blue);
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+.card .right-sec .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+.card .right-sec .right {
+  color: black;
+  font-weight: 700;
+}
+.card .right-sec .right span {
+  color: gray;
+}
+.card .right-sec button {
+  margin-top: 50px;
+  padding: 15px 3px;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: var(--dark-gray-blue);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    flex-wrap: wrap;
+  }
+  .card .left-sec,
+  .card .right-sec {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
