@@ -147,7 +147,29 @@ body {
   border: none;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1450px) {
+  .card {
+    width: 100%;
+    justify-content: center;
+  }
+  .card .left-sec,
+  .card .right-sec {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 963px) {
+  .card .left-sec,
+  .card .right-sec {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 645px) {
+  .card .left-sec,
+  .card .right-sec {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 500px) {
   .card {
     flex-grow: 1;
     flex-wrap: wrap;
@@ -157,11 +179,16 @@ body {
     width: 100%;
   }
   .card .left-sec .your-result {
-    margin-top: 300px;
+    margin-top: 100px;
   }
   .card .left-sec .rounded {
     height: 150px;
     width: 150px;
     padding: 30px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .card .left-sec .your-result {
+    margin-top: 250px;
   }
 }/*# sourceMappingURL=style.css.map */
